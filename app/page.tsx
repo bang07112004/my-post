@@ -1,7 +1,7 @@
 "use client";
 
-import AddPost from "@/components/AddPost";
-import Post from "@/components/Post";
+import AddPost from "../components/AddPost";
+import Post from "../components/Post";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { PostsType } from "./types/Posts";
