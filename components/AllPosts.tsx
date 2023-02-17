@@ -13,13 +13,13 @@ const allPosts = async () => {
   return response.data;
 };
 
-function AllPosts({}: Props) {
+function AllPosts({}: Props): JSX.Element {
   const { data, error, isLoading } = useQuery<PostsType[]>({
     queryFn: allPosts,
     queryKey: ["posts"],
   });
-  if (error) return error;
-  if (isLoading) return "Loading.....";
+  // if (error) return error;
+  // if (isLoading) return "Loading.....";
   return (
     <div>
       {data?.map((post) => (
