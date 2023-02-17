@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { PostsType } from "../app/types/Posts";
 type Props = {
   avatar: string;
   name: string;

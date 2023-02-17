@@ -1,3 +1,5 @@
+"use client";
+
 import AllPosts from "../components/AllPosts";
 import AddPost from "../components/AddPost";
 
