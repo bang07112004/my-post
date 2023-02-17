@@ -3,20 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { PostsType } from "../app/types/Posts";
+type Props = {
+  avatar: string;
+  name: string;
+  postTitle: string;
+  id: string;
+  comments: any;
+};
 
-// type Props = {
-//   avatar: string;
-//   name: string;
-//   postTitle: string;
-//   id: string;
-//   comments?: {
-//     id: string;
-//     postId: string;
-//     userId: string;
-//   }[];
-// };
-
-function Post({ avatar, name, postTitle, id, comments }) {
+function Post({ avatar, name, postTitle, id, comments }: Props) {
   return (
     <div className="my-8 rounded-lg bg-white p-8">
       <div className="flex items-center gap-2">
